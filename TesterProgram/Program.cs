@@ -24,7 +24,7 @@ namespace TesterProgram
 
             Console.WriteLine(s2);
 
-            Console.WriteLine("\n\n\n");
+            Console.WriteLine("\n\n");
 
             Vehicle v1 = new Vehicle();
 
@@ -38,6 +38,20 @@ namespace TesterProgram
             Vehicle v2 = new Vehicle("Mercury", "Bobcat", 1974, 2300);
 
             Console.WriteLine(v2);
+
+            Console.WriteLine("\n\n");
+
+            Login l1 = new Login();
+
+            l1.Username = "TwinMom";
+            l1.Password = "12345";
+
+            Console.WriteLine(l1);
+
+
+            Login l2 = new Login("CharliesMom", "12345");
+
+            Console.WriteLine(l2);
 
         }
     }
