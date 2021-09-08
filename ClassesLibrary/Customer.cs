@@ -10,12 +10,12 @@ namespace ClassesLibrary
     {
         //fields
 
-        //props
+        //properties
         public string CustomerId { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public ContactInfo ContactInformation { get; set; }
-
+               
         //ctors
         public Customer(string customerId, string firstName, string lastName, ContactInfo contactInformation)
         {
@@ -34,11 +34,12 @@ namespace ClassesLibrary
         public override string ToString()
         {
             //return base.ToString();
-            return $"\nCustomer ID: {CustomerId}\n" +
+            return $"Customer ID: {CustomerId}\n" +
                 $"First Name: {FirstName}\n" +
                 $"Last Name: {LastName}\n" +
                 $"Contact Information: {ContactInformation}\n";
-        }
+        }//end ToString()
 
+        
     }//end class
 }//end namespace

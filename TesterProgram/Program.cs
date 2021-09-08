@@ -70,34 +70,16 @@ namespace TesterProgram
             Console.WriteLine(c2 + "\n");
 
             Customer cust1 = new Customer("11111", "Mark", "Hall", c1);
+
             Customer cust2 = new Customer();
-            cust2.CustomerId = "22222";
             cust2.FirstName = "Jesse";
             cust2.LastName = "James";
+            cust2.CustomerId = "22222";
             cust2.ContactInformation = c2;
 
-            Console.WriteLine(cust1 + "\n" + cust2 + "\n");
+            Console.WriteLine(cust1 + "\n");
+            Console.WriteLine(cust2 + "\n");
 
-            CreditCardAccount credit1 = new CreditCardAccount(54241807, cust1, 5000, false, .03m);
-
-            CreditCardAccount credit2 = new CreditCardAccount();
-            credit2.AccountNumber = 41286705;
-            credit2.CustomerInfo = cust2;
-            credit2.Balance = 1500;
-            credit2.IsPastDue = true;
-            credit2.AnnualInterestRate = .12m;
-
-            Console.WriteLine(credit1 + "\n" + credit2 + "\n");
-
-            Book b1 = new Book();
-            b1.Title = "A Light in the Attic";
-            b1.Author = "Shel Silverstein";
-            b1.NumberOfPages = 192;
-
-            Book b2 = new Book("Surviving The Badge", "Sheriff Dennis G. Parker", 354);
-
-            Console.WriteLine($"{b1}\n{b2}\n");
-            
-        }
-    }
-}
+        }//end Main()
+    }//end class
+}//end namespace
