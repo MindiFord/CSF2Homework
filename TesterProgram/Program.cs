@@ -61,15 +61,25 @@ namespace TesterProgram
             c1.State = "Missouri";
             c1.Zip = "64068";
             c1.Phone = "(816) 555-5555";
-            c1.Email = "fake@Hallmark.com";
+            c1.Email = "MarkHall@Hallmark.com";
 
-            Console.WriteLine(c1);
+            Console.WriteLine(c1 + "\n");
 
-            ContactInfo c2 = new ContactInfo("1201 S 12th Street", "St. Joseph", "Missouri", "64503", "(816) 555-6666", "jessejames@fake.com");
+            ContactInfo c2 = new ContactInfo("1201 S 12th Street", "St. Joseph", "Missouri", "64503", "(816) 555-6666", "jessejames@somewhere.com");
 
-            Console.WriteLine(c2);
+            Console.WriteLine(c2 + "\n");
 
+            Customer cust1 = new Customer("11111", "Mark", "Hall", c1);
 
-        }
-    }
-}
+            Customer cust2 = new Customer();
+            cust2.FirstName = "Jesse";
+            cust2.LastName = "James";
+            cust2.CustomerId = "22222";
+            cust2.ContactInformation = c2;
+
+            Console.WriteLine(cust1 + "\n");
+            Console.WriteLine(cust2 + "\n");
+
+        }//end Main()
+    }//end class
+}//end namespace
