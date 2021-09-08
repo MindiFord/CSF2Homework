@@ -88,9 +88,15 @@ namespace TesterProgram
             credit2.AnnualInterestRate = .12m;
 
             Console.WriteLine(credit1 + "\n" + credit2 + "\n");
-            
 
+            Book b1 = new Book();
+            b1.Title = "A Light in the Attic";
+            b1.Author = "Shel Silverstein";
+            b1.NumberOfPages = 192;
 
+            Book b2 = new Book("Surviving The Badge", "Sheriff Dennis G. Parker", 354);
+
+            Console.WriteLine($"{b1}\n{b2}\n");
             
         }
     }
