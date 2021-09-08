@@ -61,15 +61,37 @@ namespace TesterProgram
             c1.State = "Missouri";
             c1.Zip = "64068";
             c1.Phone = "(816) 555-5555";
-            c1.Email = "fake@Hallmark.com";
+            c1.Email = "MarkHall@Hallmark.com";
 
-            Console.WriteLine(c1);
+            Console.WriteLine(c1 + "\n");
 
-            ContactInfo c2 = new ContactInfo("1201 S 12th Street", "St. Joseph", "Missouri", "64503", "(816) 555-6666", "jessejames@fake.com");
+            ContactInfo c2 = new ContactInfo("1201 S 12th Street", "St. Joseph", "Missouri", "64503", "(816) 555-6666", "jessejames@somewhere.com");
 
-            Console.WriteLine(c2);
+            Console.WriteLine(c2 + "\n");
+
+            Customer cust1 = new Customer("11111", "Mark", "Hall", c1);
+            Customer cust2 = new Customer();
+            cust2.CustomerId = "22222";
+            cust2.FirstName = "Jesse";
+            cust2.LastName = "James";
+            cust2.ContactInformation = c2;
+
+            Console.WriteLine(cust1 + "\n" + cust2 + "\n");
+
+            CreditCardAccount credit1 = new CreditCardAccount(54241807, cust1, 5000, false, .03m);
+
+            CreditCardAccount credit2 = new CreditCardAccount();
+            credit2.AccountNumber = 41286705;
+            credit2.CustomerInfo = cust2;
+            credit2.Balance = 1500;
+            credit2.IsPastDue = true;
+            credit2.AnnualInterestRate = .12m;
+
+            Console.WriteLine(credit1 + "\n" + credit2 + "\n");
+            
 
 
+            
         }
     }
 }

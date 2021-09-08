@@ -74,12 +74,12 @@ namespace ClassesLibrary
         //method
         public override string ToString()
         {
-            return ($"Street Address: {StreetAddress}\n" +
+            return ($"\nStreet Address: {StreetAddress}\n" +
                 $"City: {City}\n" +
                 $"State: {State}\n" +
                 $"Zip: {Zip}\n" +
                 $"Phone: {Phone}\n" +
-                $"Email: {Email}\n");
+                $"Email: {Email}");
         }
 
     }
