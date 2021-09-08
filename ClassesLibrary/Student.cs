@@ -53,10 +53,10 @@ namespace ClassesLibrary
         {
 
         }
-
+        
         //methods
         public override string ToString()
-        {
+        { 
             return string.Format($"" +
                 $"First Name: {FirstName}\n" +
                 $"Last Name: {LastName}\n" +

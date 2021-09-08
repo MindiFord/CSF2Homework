@@ -53,6 +53,23 @@ namespace TesterProgram
 
             Console.WriteLine(l2);
 
+            Console.WriteLine("\n\n");
+
+            ContactInfo c1 = new ContactInfo();
+            c1.StreetAddress = "2101 N Lightburne Ave";
+            c1.City = "Liberty";
+            c1.State = "Missouri";
+            c1.Zip = "64068";
+            c1.Phone = "(816) 555-5555";
+            c1.Email = "fake@Hallmark.com";
+
+            Console.WriteLine(c1);
+
+            ContactInfo c2 = new ContactInfo("1201 S 12th Street", "St. Joseph", "Missouri", "64503", "(816) 555-6666", "jessejames@fake.com");
+
+            Console.WriteLine(c2);
+
+
         }
     }
 }
